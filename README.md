@@ -1,2 +1,2 @@
 # IUGC2025
-This repository contains the official code for our paper Adversarially Finetuned Self-Supervised Framework for "Automated Landmark Detection in Intrapartum Ultrasound" at MICCAI 2025
+This repository contains the code for our paper submitted at MICCAI 2025 for Intrapartum Ultrasound Grand Challenge
