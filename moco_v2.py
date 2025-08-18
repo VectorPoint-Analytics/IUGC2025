@@ -29,13 +29,13 @@ class MoCoV2(nn.Module):
 
         # 1x1 conv projector to maintain spatial layout
         self.projector_q = nn.Sequential(
-            nn.Conv2d(encoder_q.out_channels, 256, kernel_size=1),
+            nn.Conv2d(self.encoder_q.out_channels, 256, kernel_size=1),
             nn.ReLU(),
             nn.Conv2d(256, feature_dim, kernel_size=1)
         )
 
         self.projector_k = nn.Sequential(
-            nn.Conv2d(encoder_k.out_channels, 256, kernel_size=1),
+            nn.Conv2d(self.encoder_k.out_channels, 256, kernel_size=1),
             nn.ReLU(),
             nn.Conv2d(256, feature_dim, kernel_size=1)
         )
